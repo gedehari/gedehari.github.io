@@ -1,0 +1,101 @@
+/* Montserrat font as always */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Set global font */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+br {
+    display: block;
+    content: '';
+    margin-top: 0.2em;
+}
+
+/* Sidenav general rulesets */
+nav.sidenav {
+    height: 100%;
+    width: 315px;
+    position: fixed;
+    padding: 1em 1.5em;
+    z-index: 1;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: rgb(40, 40, 40);
+}
+
+nav.sidenav ul {
+    list-style: none;
+}
+
+nav.sidenav label {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    display: block
+}
+
+nav.sidenav a {
+    padding: 0.6em 0.75em;
+    margin: 0.4em 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 0.3em;
+    display: inline-block;
+    color: white;
+    font-size: 1.25em;
+}
+
+nav.sidenav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav.sidebar a:active {
+    opacity: 0;
+}
+
+div.main {
+    margin-left: 315px;
+    padding: 5em 8em;
+    box-sizing: border-box;
+}
+
+div.main section {
+    padding-bottom: 5em;
+}
+
+div.main h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+
+div.main p {
+    font-size: 1.45em;
+    margin-bottom: 0.8em;
+}
+
+div.main ul {
+    padding-left: 2em;
+}
+
+div.main ul > li {
+    font-size: 1.25em;
+    margin-bottom: 0.3em;
+}
+
+div.main hr {
+    border: 0;
+    height: 1px;
+    margin-bottom: 1em;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
