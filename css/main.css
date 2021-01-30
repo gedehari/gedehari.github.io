@@ -118,8 +118,8 @@ div.main hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-ul.social-medias .fa {
-    text-decoration: none;
+ul.social-medias .fa {    
+    font-size: 1.3em;
 }
 
 @media (max-width: 1340px) {
@@ -139,6 +139,14 @@ ul.social-medias .fa {
 
     div.main {
         margin-left: 0;
+    }
+
+    div.main img.avatar {
+        display: block;
+        margin: auto;
+        width: 20em;
+        max-width: 80%;
+        height: auto;
     }
 
     div.main section {
