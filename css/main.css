@@ -33,10 +33,6 @@ nav.sidenav {
     background-color: rgb(40, 40, 40);
 }
 
-nav.sidenav ul {
-    list-style: none;
-}
-
 nav.sidenav label {
     color: white;
     font-weight: bold;
@@ -44,6 +40,11 @@ nav.sidenav label {
     margin-bottom: 1em;
     display: block
 }
+
+nav.sidenav ul {
+    list-style: none;
+}
+
 
 nav.sidenav a {
     padding: 0.6em 0.75em;
@@ -89,7 +90,7 @@ div.main ul {
 
 div.main ul > li {
     font-size: 1.25em;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
 }
 
 div.main hr {
@@ -98,4 +99,36 @@ div.main hr {
     margin-bottom: 1em;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+@media (max-width: 1340px) {
+    div.main {
+        padding: 2em 2.25em;
+    }
+
+    div.main section {
+        padding-bottom: 2.5em;
+    }
+}
+
+@media (max-width: 850px) {
+    nav.sidenav {
+        display: none;
+    }
+
+    div.main {
+        margin-left: 0;
+    }
+
+    div.main section {
+        padding-bottom: 2em;
+    }
+
+    div.main h1 {
+        font-size: 1.5em;
+    }
+
+    div.main p {
+        font-size: 1.2em;
+    }
 }
